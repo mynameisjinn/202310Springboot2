@@ -2,12 +2,13 @@ package com.hello.core.discount;
 
 import com.hello.core.member.Member;
 
-public interface DiscountPolicy {
+public interface Discount {
+
     /**
-     *
+     * Get the discount
      * @param member
      * @param price
-     * @return 할인 대상 금액
+     * @return discounted price
      */
     int discount(Member member, int price);
 }
